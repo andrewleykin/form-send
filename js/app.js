@@ -1,5 +1,6 @@
 (function(){
   $('#form').submit(function(e){
+    var myForm = $('#form')
     e.preventDefault();
     var fd = new FormData(document.forms.form);
     console.log(fd);
@@ -10,7 +11,7 @@
       processData: false,
       contentType: false,
       success: function(data){
-        $(this).addClass('done');
+        myForm.addClass('done');
       }
     })
   });
