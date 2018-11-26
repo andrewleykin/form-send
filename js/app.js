@@ -10,7 +10,7 @@
       processData: false,
       contentType: false,
       success: function(data){
-        alert(data);
+        $(this).addClass('done');
       }
     })
   });
